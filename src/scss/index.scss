@@ -1,0 +1,18 @@
+@import 'bootstrap-custom';
+@import 'helpers';
+@import 'code.scss';
+@import 'style';
+@import 'landing-2';
+@import 'github-corner';
+
+// fontawesome
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+// slick
+$slick-font-path: '~slick-carousel/slick/fonts/';
+$slick-loader-path: '~slick-carousel/slick/';
+$slick-arrow-color: black;
+@import '~slick-carousel/slick/slick.scss';
+@import '~slick-carousel/slick/slick-theme.scss';

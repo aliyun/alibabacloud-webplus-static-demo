@@ -1,0 +1,77 @@
+// Import only the necessary Bootstrap files.
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+// Bootstrap overrides.
+
+$blue: #1d82ff;
+$indigo: #4E3188;
+$purple: #715CB0;
+$pink: #FF5B9C;
+$red: #EE0427;
+$orange: #EF6C35;
+$yellow: #FFD500;
+$green: #00CA4C;
+$teal: #89D9D0;
+$cyan: #A5E9DB;
+$navy: #021993;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800
+);
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray-600,
+  success: $green,
+  info: $teal,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+);
+
+$enable-rounded: true;
+
+$navbar-padding-y: 1rem;
+$nav-link-padding-y: 2rem;
+
+$body-bg: $white;
+$body-color: $gray-600;
+
+$headings-color: $gray-900;
+
+$link-color: theme-color("primary");
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+$font-weight-normal: 300;
+$font-weight-bold: 700;
+
+$font-weight-base: $font-weight-normal;
+$line-height-base: 1.8;
+
+$btn-font-weight: $font-weight-normal;
+
+$grid-gutter-width: 30px;
+
+$input-focus-border-color: theme-color("primary");
+
+$font-family-sans-serif: -apple-system, "Noto Sans", Montserrat, Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+$font-family-serif: "Crimson Text", Georgia, "Times New Roman", Times, STFangsong, FangSong, FangSong_GB2312, "CWTEX\-F", serif;
+
+/* Finally, import Bootstrap to set the changes! */
+@import '~bootstrap/scss/bootstrap';

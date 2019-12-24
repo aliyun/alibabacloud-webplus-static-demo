@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserJSPlugin = require('terser-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const devMode = process.env.NODE_ENV !== 'production'
 
@@ -52,17 +52,20 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './src/pages/home/index.html',
-      filename: 'index.html',
+      filename: './index.html',
+      favicon: "./src/images/favicon.png",
       chunks: ['home']
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/images/favicon.png",
       template: './src/pages/env-vars/index.html',
-      filename: 'env-vars/index.html',
+      filename: './env-vars/index.html',
       chunks: ['env-vars']
     }),
     new HtmlWebpackPlugin({
+      favicon: "./src/images/favicon.png",
       template: './src/pages/todo-list/index.html',
-      filename: 'todo-list/index.html',
+      filename: './todo-list/index.html',
       chunks: ['todo-list']
     }),
     new MiniCssExtractPlugin({
@@ -111,19 +114,26 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif)$/,
         use: [{
-          loader: 'file-loader',
+          loader: 'url-loader',
           options: {
-            outputPath: 'images/'
+            limit: 8192,
+            name: '[name].[ext]?[hash:8]',
+            outputPath: './assets/images/',
+            publicPath: '/assets/images/',
+            esModule: false
           }
         }]
       },
       {
         test: /\.(woff2?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [{
-          loader: 'file-loader',
+          loader: 'url-loader',
           options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/'
+            limit: 8192,
+            name: '[name].[ext]?[hash:8]',
+            outputPath: './assets/fonts/',
+            publicPath: '/assets/fonts/',
+            esModule: false
           }
         }]
       }

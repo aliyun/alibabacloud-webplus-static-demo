@@ -1,6 +1,6 @@
 import 'typeface-montserrat'
 import 'typeface-crimson-text'
-import '../../scss/index.scss'
+import '../../styles/index.scss'
 
 import $ from 'jquery'
 import 'bootstrap/js/dist/util'

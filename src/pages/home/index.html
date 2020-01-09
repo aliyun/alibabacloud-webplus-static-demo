@@ -19,8 +19,6 @@
       <div class="collapse navbar-collapse" id="navbar-content">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link active" href="#section-home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#section-next-steps">Next Steps</a></li>
-          <li class="nav-item"><a class="nav-link" href="#section-whats-new">What's New</a></li>
           <li class="nav-item"><a class="nav-link" href="#section-features">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#section-tools">Tools</a></li>
           <li class="nav-item"><a class="nav-link" href="#section-footer">Contact Us</a></li>
@@ -49,122 +47,11 @@
           <h2 class="heading mb-3">It's running!</h2>
           <div class="sub-heading">
             <p class="mb-4">Congratulations, you successully deployed a Web+ application to your dedicated environment.</p>
+            <!--
             <p class="mb-5">Please follow <a class="smooth-scroll" href="#section-next-steps">these steps</a> to find
               out what you can do next according to the deployment method, then keep on reading the rest sections to
               learn more about Web+.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pb_section bg-light pb_slant-white pb_pb-250" id="section-next-steps">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-8 text-center mb-5">
-          <h2>Next Steps</h2>
-        </div>
-      </div>
-      <div class="row justify-content-md-center">
-        <div class="col-md-2">
-          <div class="nav flex-column nav-pills" id="v-pills-tab">
-            <a class="nav-link py-2 mb-2 active" id="v-pills-cli-tab" data-toggle="pill" href="#v-pills-cli">CLI</a>
-            <a class="nav-link py-2 mb-2" id="v-pills-console-tab" data-toggle="pill" href="#v-pills-console">Console</a>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="tab-content" id="v-pills-tab-content">
-            <div class="tab-pane fade show active" id="v-pills-cli">
-              <ol>
-                <li>Ensure that you're under <span class="badge badge-secondary">alibabacloud-webplus-demo-static</span> directory,
-                  which is cloned from <a href="https://github.com/aliyun/alibabacloud-webplus-demo-static"
-                    target="_blank">https://github.com/aliyun/alibabacloud-webplus-demo-static</a>.</li>
-                <li>
-                  Run the following commands:
-                  <pre><code class="highlight">$ git checkout next-step
-$ mvn clean package
-$ wpctl deploy</code></pre>
-                </li>
-                <li>After doing this, please <a class="btn btn-link p-0" href="javascript:location.reload()">refresh</a>
-                  the page to see what will happen.</li>
-              </ol>
-            </div>
-            <div class="tab-pane fade" id="v-pills-console">
-              <ol>
-                <li>Download a new version of this application from <a href="">here</a>.</li>
-                <li>Navigate to <a class="btn btn-link p-0"
-                    href="/"
-                    target="_blank">environment</a> details page.</li>
-                <li>Click <span class="badge badge-secondary">Deploy</span> button to open <span
-                    class="badge badge-secondary">Deploy Enviromnent</span> page.</li>
-                <li>Upload the package you just downloaded via this page.</li>
-                <li>Click <span class="badge badge-secondary">OK</span> button to deploy the new version.</li>
-                <li>After all things done, please <a class="btn btn-link p-0"
-                    href="javascript:location.reload()">refresh</a> the page to see what will happen.</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="pb_section bg-white pb_slant-light pb_pb-250" id="section-whats-new">
-    <div class="container">
-      <div class="row justify-content-center mb-1">
-        <div class="col-md-6 text-center mb-5">
-          <h2>What's New</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md">
-          <div class="pb_slide_testimonial_sync_v1">
-            <div class="pb_slider_content js-pb_slider_content2 px-3" id="whats-new-slider">
-              <div>
-                <div class="text-center pb-3">
-                    <h3 class="heading">Garry Alexander</h3>
-                    <span class="subheading">@garry</span>
-                </div>
-                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
-                  <div class="media-body">
-                    <blockquote class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</blockquote>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="text-center pb-3">
-                    <h3 class="heading">Deborah Smith</h3>
-                    <span class="subheading">@deborah</span>
-                </div>
-                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
-                  <div class="media-body">
-                    <blockquote class="mb-5">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</blockquote>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="text-center pb-3">
-                    <h3 class="heading">James Robertson</h3>
-                    <span class="subheading">@james</span>
-                </div>
-                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
-                  <div class="media-body">
-                    <blockquote class="mb-5">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</blockquote>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="text-center pb-3">
-                    <h3 class="heading">Marie Gibson</h3>
-                    <span class="subheading">@marie</span>
-                </div>
-                <div class="media d-block text-center testimonial_v1 pb_quote_v2">
-                  <div class="media-body">
-                    <blockquote class="mb-5">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
+            -->
           </div>
         </div>
       </div>

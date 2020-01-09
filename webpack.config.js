@@ -11,9 +11,8 @@ module.exports = {
     filename: '[name]/bundle.js'
   },
   entry: {
-    home: './src/pages/home/index.js',
-    'env-vars': './src/pages/env-vars/index.js',
-    'todo-list': './src/pages/todo-list/index.js'
+    home: './src/pages/home/app.js',
+    todolist: './src/pages/todolist/app.js'
   },
   devtool: devMode ? 'inline-source-map' : 'source-map',
   devServer: {
@@ -56,17 +55,19 @@ module.exports = {
       favicon: "./src/images/favicon.png",
       chunks: ['home']
     }),
+    /*
     new HtmlWebpackPlugin({
       favicon: "./src/images/favicon.png",
       template: './src/pages/env-vars/index.html',
       filename: './env-vars/index.html',
       chunks: ['env-vars']
     }),
+    */
     new HtmlWebpackPlugin({
+      template: './src/pages/todolist/index.html',
+      filename: './todolist.html',
       favicon: "./src/images/favicon.png",
-      template: './src/pages/todo-list/index.html',
-      filename: './todo-list/index.html',
-      chunks: ['todo-list']
+      chunks: ['todolist']
     }),
     new MiniCssExtractPlugin({
       filename: '[name]/bundle.css',
